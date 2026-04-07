@@ -1,6 +1,6 @@
 # AI Sandbox Public Showcase
 
-[![Public Security Guards](https://img.shields.io/github/actions/workflow/status/a6091731/ai-sandbox-public-showcase/public-security-guards.yml?branch=main&label=public%20security%20guards)](https://github.com/a6091731/ai-sandbox-public-showcase/actions/workflows/public-security-guards.yml) [![License](https://img.shields.io/github/license/a6091731/ai-sandbox-public-showcase)](./LICENSE) [![Community Standards](https://img.shields.io/badge/community-standards-success)](https://github.com/a6091731/ai-sandbox-public-showcase/community)<br>
+[![Public Security Guards](https://img.shields.io/github/actions/workflow/status/a6091731/ai-sandbox-public-showcase/public-security-guards.yml?branch=main&label=public%20security%20guards)](https://github.com/a6091731/ai-sandbox-public-showcase/actions/workflows/public-security-guards.yml) [![License](https://img.shields.io/github/license/a6091731/ai-sandbox-public-showcase)](./LICENSE) [![Community Standards](https://img.shields.io/badge/community-standards-success)](https://github.com/a6091731/ai-sandbox-public-showcase/community)\
 [![Security Policy](https://img.shields.io/badge/security-policy-informational)](./SECURITY.md) [![Contributing](https://img.shields.io/badge/contributing-guidelines-2ea44f)](./CONTRIBUTING.md) [![CODEOWNERS](https://img.shields.io/badge/CODEOWNERS-enabled-success)](./.github/CODEOWNERS)
 
 Public showcase for AI Sandbox engineering capability with strict confidentiality boundaries.
