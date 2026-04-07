@@ -1,6 +1,7 @@
 name: monthly release train
 
 on:
+  pull_request:
   schedule:
     - cron: "17 2 1 * *"
   workflow_dispatch:
@@ -91,6 +92,7 @@ jobs:
           EOF
 
       - name: Create draft release if missing
+        if: github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
