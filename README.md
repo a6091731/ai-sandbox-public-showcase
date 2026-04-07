@@ -41,6 +41,21 @@
 
 ---
 
+## ⭐ Support & Star Wave
+
+If this public capability map is useful, please star the showcase and the SDK you use most.
+
+- Showcase entry point: [a6091731/ai-sandbox-public-showcase](https://github.com/a6091731/ai-sandbox-public-showcase)
+- TypeScript SDK: [eGroupAI/ai-sandbox-sdk-typescript](https://github.com/eGroupAI/ai-sandbox-sdk-typescript)
+- Python SDK: [eGroupAI/ai-sandbox-sdk-python](https://github.com/eGroupAI/ai-sandbox-sdk-python)
+- Java SDK: [eGroupAI/ai-sandbox-sdk-java](https://github.com/eGroupAI/ai-sandbox-sdk-java)
+- Go SDK: [eGroupAI/ai-sandbox-sdk-go](https://github.com/eGroupAI/ai-sandbox-sdk-go)
+- C# SDK: [eGroupAI/ai-sandbox-sdk-csharp](https://github.com/eGroupAI/ai-sandbox-sdk-csharp)
+- PHP SDK: [eGroupAI/ai-sandbox-sdk-php](https://github.com/eGroupAI/ai-sandbox-sdk-php)
+- Ruby SDK: [eGroupAI/ai-sandbox-sdk-ruby](https://github.com/eGroupAI/ai-sandbox-sdk-ruby)
+
+---
+
 ## 🛡️ Disclosure Boundary
 
 <table>
