@@ -1,0 +1,112 @@
+name: monthly release train
+
+on:
+  schedule:
+    - cron: "17 2 1 * *"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Optional release version (for example: 1.0.2 or v1.0.2)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  draft-release-train:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Validate release baseline files
+        run: |
+          required=(
+            "VERSION"
+            "CHANGELOG.md"
+            "docs/release-notes-template.md"
+            ".github/release.yml"
+          )
+          missing=0
+          for file in "${required[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "Missing required baseline file: $file"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Resolve release tag
+        id: tag
+        shell: bash
+        run: |
+          base_version="$(tr -d '[:space:]' < VERSION)"
+          if [ -z "$base_version" ]; then
+            echo "VERSION file is empty."
+            exit 1
+          fi
+
+          requested="${{ github.event.inputs.version }}"
+          if [ -n "$requested" ]; then
+            requested="${requested#v}"
+            tag="v${requested}"
+            title="v${requested}"
+            prerelease="false"
+          else
+            train_id="$(date -u +'%Y%m')"
+            tag="v${base_version}-train.${train_id}"
+            title="${tag} Monthly Release Train"
+            prerelease="true"
+          fi
+
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "title=$title" >> "$GITHUB_OUTPUT"
+          echo "prerelease=$prerelease" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare release notes
+        run: |
+          cat > /tmp/release-notes.md <<'EOF'
+          ## Release Train Baseline
+
+          - Source of truth version: `VERSION`
+          - Changelog source: `CHANGELOG.md`
+          - Template source: `docs/release-notes-template.md`
+
+          ## Release checklist
+
+          - [ ] Verify changelog entries are complete.
+          - [ ] Confirm CI and security guard workflows are green.
+          - [ ] Confirm disclosure checklist compliance.
+          - [ ] Publish release after review.
+
+          ## References
+
+          - `docs/releases/`
+          - `.github/release.yml`
+          EOF
+
+      - name: Create draft release if missing
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${{ steps.tag.outputs.tag }}"
+          title="${{ steps.tag.outputs.title }}"
+          prerelease="${{ steps.tag.outputs.prerelease }}"
+
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release $tag already exists. Skipping."
+            exit 0
+          fi
+
+          args=(release create "$tag" --target main --draft --title "$title" --notes-file /tmp/release-notes.md)
+          if [ "$prerelease" = "true" ]; then
+            args+=(--prerelease)
+          fi
+
+          gh "${args[@]}"
+          echo "Created draft release $tag"
