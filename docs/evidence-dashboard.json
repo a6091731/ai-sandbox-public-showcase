@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T06:25:11.944Z",
+  "generatedAt": "2026-04-07T06:25:44.804Z",
   "repos": [
     {
       "slug": "a6091731/ai-sandbox-public-showcase",
@@ -7,14 +7,14 @@
       "forks": 0,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-04-07T06:23:36Z",
+      "pushedAt": "2026-04-07T06:25:28Z",
       "pushAgeDays": 0,
       "latestRun": {
-        "status": "completed",
-        "conclusion": "success",
-        "createdAt": "2026-04-07T06:23:19Z",
-        "htmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/actions/runs/24067546220",
-        "name": "public security guards",
+        "status": "in_progress",
+        "conclusion": "n/a",
+        "createdAt": "2026-04-07T06:25:30Z",
+        "htmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/actions/runs/24067615092",
+        "name": "evidence dashboard",
         "stableConclusion": "success",
         "stableHtmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/actions/runs/24067546220"
       },
