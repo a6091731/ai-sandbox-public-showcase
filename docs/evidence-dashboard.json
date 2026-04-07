@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T06:45:01.753Z",
+  "generatedAt": "2026-04-07T06:49:44.592Z",
   "repos": [
     {
       "slug": "a6091731/ai-sandbox-public-showcase",
@@ -7,22 +7,22 @@
       "forks": 0,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-04-07T06:40:18Z",
+      "pushedAt": "2026-04-07T06:49:23Z",
       "pushAgeDays": 0,
       "latestRun": {
         "status": "completed",
         "conclusion": "success",
-        "createdAt": "2026-04-07T06:40:20Z",
-        "htmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/actions/runs/24068094545",
+        "createdAt": "2026-04-07T06:45:17Z",
+        "htmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/actions/runs/24068259608",
         "name": "public security guards",
         "stableConclusion": "success",
-        "stableHtmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/actions/runs/24068094545"
+        "stableHtmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/actions/runs/24068259608"
       },
       "latestRelease": {
-        "tag": null,
-        "publishedAt": null,
-        "ageDays": null,
-        "htmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/releases"
+        "tag": "v1.0.1",
+        "publishedAt": "2026-04-07T06:49:23Z",
+        "ageDays": 0,
+        "htmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/releases/tag/v1.0.1"
       },
       "governanceCount": 4,
       "governanceScore": 100
@@ -36,13 +36,13 @@
       "pushedAt": "2026-04-07T06:44:30Z",
       "pushAgeDays": 0,
       "latestRun": {
-        "status": "in_progress",
-        "conclusion": "n/a",
+        "status": "completed",
+        "conclusion": "success",
         "createdAt": "2026-04-07T06:44:33Z",
         "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-typescript/actions/runs/24068233971",
         "name": "Release Hardening",
         "stableConclusion": "success",
-        "stableHtmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-typescript/actions/runs/24068221662"
+        "stableHtmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-typescript/actions/runs/24068233971"
       },
       "latestRelease": {
         "tag": "v1.0.1",
@@ -88,13 +88,13 @@
       "pushedAt": "2026-04-07T06:44:31Z",
       "pushAgeDays": 0,
       "latestRun": {
-        "status": "in_progress",
-        "conclusion": "n/a",
+        "status": "completed",
+        "conclusion": "success",
         "createdAt": "2026-04-07T06:44:34Z",
         "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-java/actions/runs/24068234773",
         "name": "Release Hardening",
         "stableConclusion": "success",
-        "stableHtmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-java/actions/runs/24068223507"
+        "stableHtmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-java/actions/runs/24068234773"
       },
       "latestRelease": {
         "tag": "v1.0.1",
@@ -114,13 +114,13 @@
       "pushedAt": "2026-04-07T06:44:32Z",
       "pushAgeDays": 0,
       "latestRun": {
-        "status": "in_progress",
-        "conclusion": "n/a",
+        "status": "completed",
+        "conclusion": "success",
         "createdAt": "2026-04-07T06:44:35Z",
         "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-go/actions/runs/24068235321",
         "name": "Release Hardening",
         "stableConclusion": "success",
-        "stableHtmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-go/actions/runs/24068224560"
+        "stableHtmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-go/actions/runs/24068235321"
       },
       "latestRelease": {
         "tag": "v1.0.1",
@@ -166,13 +166,13 @@
       "pushedAt": "2026-04-07T06:44:34Z",
       "pushAgeDays": 0,
       "latestRun": {
-        "status": "in_progress",
-        "conclusion": "n/a",
+        "status": "completed",
+        "conclusion": "success",
         "createdAt": "2026-04-07T06:44:37Z",
         "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-php/actions/runs/24068236464",
         "name": "Release Hardening",
         "stableConclusion": "success",
-        "stableHtmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-php/actions/runs/24068226239"
+        "stableHtmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-php/actions/runs/24068236464"
       },
       "latestRelease": {
         "tag": "v1.0.1",
