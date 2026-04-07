@@ -121,7 +121,7 @@ async function fileExists(slug, filePath) {
 
 async function collectRepoSignals(slug) {
   const repo = await fetchJson(`/repos/${slug}`);
-  const runs = await fetchJson(`/repos/${slug}/actions/runs?per_page=1`, {
+  const runs = await fetchJson(`/repos/${slug}/actions/runs?per_page=10`, {
     optional: true,
   });
   const releases = await fetchJson(`/repos/${slug}/releases?per_page=1`, {
@@ -137,7 +137,11 @@ async function collectRepoSignals(slug) {
     (governanceCount / GOVERNANCE_FILES.length) * 100,
   );
 
-  const latestRun = runs?.workflow_runs?.[0] || null;
+  const workflowRuns = runs?.workflow_runs || [];
+  const latestRun = workflowRuns[0] || null;
+  const latestCompletedRun = workflowRuns.find(
+    (run) => run.status === "completed",
+  ) || null;
   const latestRelease = Array.isArray(releases) ? releases[0] || null : null;
 
   const pushAgeDays = daysAgo(repo.pushed_at);
@@ -157,6 +161,9 @@ async function collectRepoSignals(slug) {
       createdAt: latestRun?.created_at || null,
       htmlUrl: latestRun?.html_url || `https://github.com/${slug}/actions`,
       name: latestRun?.name || "latest run",
+      stableConclusion: latestCompletedRun?.conclusion || latestRun?.conclusion || "n/a",
+      stableHtmlUrl:
+        latestCompletedRun?.html_url || latestRun?.html_url || `https://github.com/${slug}/actions`,
     },
     latestRelease: {
       tag: latestRelease?.tag_name || null,
@@ -176,7 +183,7 @@ function buildMarkdown(dataset) {
   const totalRepos = repos.length;
   const active30d = repos.filter((repo) => repo.pushAgeDays !== null && repo.pushAgeDays <= 30).length;
   const successfulWorkflow = repos.filter(
-    (repo) => repo.latestRun.conclusion === "success",
+    (repo) => repo.latestRun.stableConclusion === "success",
   ).length;
   const recentRelease90d = repos.filter(
     (repo) => repo.latestRelease.ageDays !== null && repo.latestRelease.ageDays <= 90,
