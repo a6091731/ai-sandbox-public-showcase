@@ -1,0 +1,197 @@
+{
+  "generatedAt": "2026-04-07T06:22:17.669Z",
+  "repos": [
+    {
+      "slug": "a6091731/ai-sandbox-public-showcase",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "pushedAt": "2026-04-07T06:11:35Z",
+      "pushAgeDays": 0,
+      "latestRun": {
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-04-07T06:12:00Z",
+        "htmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/actions/runs/24067199837",
+        "name": "public security guards"
+      },
+      "latestRelease": {
+        "tag": null,
+        "publishedAt": null,
+        "ageDays": null,
+        "htmlUrl": "https://github.com/a6091731/ai-sandbox-public-showcase/releases"
+      },
+      "governanceCount": 4,
+      "governanceScore": 100
+    },
+    {
+      "slug": "eGroupAI/ai-sandbox-sdk-typescript",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "pushedAt": "2026-04-06T11:32:40Z",
+      "pushAgeDays": 0,
+      "latestRun": {
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-04-06T11:32:42Z",
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-typescript/actions/runs/24030203861",
+        "name": "CI"
+      },
+      "latestRelease": {
+        "tag": null,
+        "publishedAt": null,
+        "ageDays": null,
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-typescript/releases"
+      },
+      "governanceCount": 2,
+      "governanceScore": 50
+    },
+    {
+      "slug": "eGroupAI/ai-sandbox-sdk-python",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "pushedAt": "2026-04-06T11:32:41Z",
+      "pushAgeDays": 0,
+      "latestRun": {
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-04-06T11:32:43Z",
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-python/actions/runs/24030204449",
+        "name": "CI"
+      },
+      "latestRelease": {
+        "tag": null,
+        "publishedAt": null,
+        "ageDays": null,
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-python/releases"
+      },
+      "governanceCount": 2,
+      "governanceScore": 50
+    },
+    {
+      "slug": "eGroupAI/ai-sandbox-sdk-java",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "pushedAt": "2026-04-06T11:32:44Z",
+      "pushAgeDays": 0,
+      "latestRun": {
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-04-06T11:32:46Z",
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-java/actions/runs/24030205909",
+        "name": "CI"
+      },
+      "latestRelease": {
+        "tag": null,
+        "publishedAt": null,
+        "ageDays": null,
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-java/releases"
+      },
+      "governanceCount": 2,
+      "governanceScore": 50
+    },
+    {
+      "slug": "eGroupAI/ai-sandbox-sdk-go",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "pushedAt": "2026-04-06T11:32:43Z",
+      "pushAgeDays": 0,
+      "latestRun": {
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-04-06T11:32:45Z",
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-go/actions/runs/24030205205",
+        "name": "CI"
+      },
+      "latestRelease": {
+        "tag": null,
+        "publishedAt": null,
+        "ageDays": null,
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-go/releases"
+      },
+      "governanceCount": 2,
+      "governanceScore": 50
+    },
+    {
+      "slug": "eGroupAI/ai-sandbox-sdk-csharp",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "pushedAt": "2026-04-06T11:32:46Z",
+      "pushAgeDays": 0,
+      "latestRun": {
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-04-06T11:32:48Z",
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-csharp/actions/runs/24030206738",
+        "name": "CI"
+      },
+      "latestRelease": {
+        "tag": null,
+        "publishedAt": null,
+        "ageDays": null,
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-csharp/releases"
+      },
+      "governanceCount": 2,
+      "governanceScore": 50
+    },
+    {
+      "slug": "eGroupAI/ai-sandbox-sdk-php",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "pushedAt": "2026-04-06T11:32:47Z",
+      "pushAgeDays": 0,
+      "latestRun": {
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-04-06T11:32:50Z",
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-php/actions/runs/24030207678",
+        "name": "CI"
+      },
+      "latestRelease": {
+        "tag": null,
+        "publishedAt": null,
+        "ageDays": null,
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-php/releases"
+      },
+      "governanceCount": 2,
+      "governanceScore": 50
+    },
+    {
+      "slug": "eGroupAI/ai-sandbox-sdk-ruby",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "pushedAt": "2026-04-06T11:32:49Z",
+      "pushAgeDays": 0,
+      "latestRun": {
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-04-06T11:32:51Z",
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-ruby/actions/runs/24030208297",
+        "name": "CI"
+      },
+      "latestRelease": {
+        "tag": null,
+        "publishedAt": null,
+        "ageDays": null,
+        "htmlUrl": "https://github.com/eGroupAI/ai-sandbox-sdk-ruby/releases"
+      },
+      "governanceCount": 2,
+      "governanceScore": 50
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+name: evidence dashboard
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/ci/generate-evidence-dashboard.cjs"
+      - ".github/workflows/evidence-dashboard.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate dashboard artifacts
+        run: node scripts/ci/generate-evidence-dashboard.cjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit dashboard updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh evidence dashboard"
+          file_pattern: docs/evidence-dashboard.md docs/evidence-dashboard.json

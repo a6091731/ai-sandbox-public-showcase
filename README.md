@@ -18,6 +18,15 @@
 
 ---
 
+## Live Evidence Dashboard
+
+[![Evidence Dashboard](https://img.shields.io/github/actions/workflow/status/a6091731/ai-sandbox-public-showcase/evidence-dashboard.yml?branch=main&label=evidence%20dashboard&style=flat-square&color=58a6ff)](https://github.com/a6091731/ai-sandbox-public-showcase/actions/workflows/evidence-dashboard.yml)
+
+- Snapshot cards and KPIs: [`docs/evidence-dashboard.md`](./docs/evidence-dashboard.md)
+- Machine-readable metrics: [`docs/evidence-dashboard.json`](./docs/evidence-dashboard.json)
+
+---
+
 ## 🗺 SDK Capability Map
 
 | SDK | Language | Visibility |
